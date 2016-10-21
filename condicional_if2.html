@@ -6,16 +6,18 @@
 </head>
 <body id="cuerpo">
 <script>
+//toLowerCase() convierte una cadena de texto en minúscula
+//toUpperCase() convierte una cadena de texto en mayúscula
 var cuerpo = document.getElementById("cuerpo");
-var colorWeb = prompt("Introduce el color de fondo. Azul/Verde/Rojo");
+var colorWeb = prompt("Introduce el color de fondo. Azul/Verde/Rojo").toLowerCase();
 
-if (colorWeb == "Azul"){
+if (colorWeb == "azul"){
 	cuerpo.style.backgroundColor ="blue";
 }
-else if (colorWeb == "Verde"){
+else if (colorWeb == "verde"){
 	cuerpo.style.backgroundColor = "green";
 }
-else if (colorWeb == "Rojo"){
+else if (colorWeb == "rojo"){
 	cuerpo.style.backgroundColor = "red";
 }
 else{
