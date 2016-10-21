@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body id="cuerpo">
+	<script>
+//toLowerCase() convierte una cadena de texto en minúscula
+//toUpperCase() convierte una cadena de texto en mayúscula
+var cuerpo = document.getElementById("cuerpo");
+var colorWeb = prompt("Introduce el color de fondo. Azul/Verde/Rojo").toLowerCase();
+if(colorWeb !="azul" && colorWeb != "verde" && colorWeb != "rojo"){
+	alert("Ese color no está contemplado");
+}
+else if (colorWeb == "azul"){
+	cuerpo.style.backgroundColor ="blue";
+}
+else if(colorWeb == "verde"){
+	cuerpo.style.backgroundColor = "green";
+}
+else {
+	cuerpo.style.backgroundColor = "red";
+}
+</script>
+</body>
+</html>
