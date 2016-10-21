@@ -5,29 +5,35 @@
 <title>Insert title here</title>
 </head>
 <body>
-<script>
+	<script>
 //parseInt() convierte una cadena de texto en número
 //typeoff() devuelve el tipo de dato del objeto
-var num1 = parseInt (prompt("introduce el primer número"));
-var num2 = parseInt (prompt("introduce el segundo número"));
+//isNaN() comprueba si no es un numero, si no es un numero devuelve true y si es un numero devuelve false
+var num1 = prompt("introduce el primer número");
+var num2 = prompt("introduce el segundo número");
 //alert(typeof(num1));
-var operacion = prompt("¿Que operación deseas realizar suma/resta/multiplicación/división?").toLowerCase();
-if(operacion == "suma"){
-	alert(num1+num2);
-}
-else if (operacion == "resta"){
-	alert(num1+num2);
-}
-else if (operacion == "multiplicación" || operacion == "multiplicacion"){
-	alert(num1*num2);
-}
-else if (operacion =="división" || operacion == "division"){
-	alert(num1/num2);
+
+if (!isNaN(num1) && !isNaN(num2)){
+	var operacion = prompt("¿Que operación deseas realizar suma/resta/multiplicación/división?").toLowerCase();
+	if(operacion == "suma"){
+		alert(parseInt(num1)+parseInt(num2));
+	}
+	else if (operacion == "resta"){
+		alert(parseInt(num1)+parseInt(num2));
+	}
+	else if (operacion == "multiplicación" || operacion == "multiplicacion"){
+		alert(parseInt(num1)*parseInt(num2));
+	}
+	else if (operacion =="división" || operacion == "division"){
+		alert(parseInt(num1)/parseInt(num2));
+	}
+	else{
+		alert("La operación no está contemplada");
+	}
 }
 else{
-	alert("La operación no es permitida");
+	alert("No se pueden operar los números");
 }
-
 </script>
 
 </body>

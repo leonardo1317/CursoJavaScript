@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+
+var meses =["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre",
+            "Nomviembre","Diciembre"]
+
+/*var count = 0;
+while(count<meses.length){
+	document.write(meses[count] + "</br>") ;
+	count++;
+}*/
+
+var nombre = prompt("Introduce tu nombre");
+
+while(!isNaN(nombre)){
+	nombre = prompt("Introduce es una nombre válido");	
+}
+
+var edad = prompt("Introduce tu edad");
+
+while(edad<=0 || edad>105 || isNaN(edad)){
+	edad = prompt("Introduce una edad válida");	
+}
+
+var poblacion = prompt("Introduce la poblacion");
+
+while(!isNaN(poblacion)){
+	poblacion = prompt("Introduce una poblacion");	
+}
+
+</script>
+</head>
+<body>
+	<p>
+		Nombre:
+		<script>document.write(nombre)</script>
+	</p>
+
+	<p>
+		Edad:
+
+		<script>document.write(edad)</script>
+	</p>
+
+	<p>
+		Población:
+		<script>document.write(poblacion)</script>
+	</p>
+
+
+</body>
+</html>
